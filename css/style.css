@@ -1,0 +1,36 @@
+.banner{
+	background-image: url('../img/bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+	min-height: 700px;
+	opacity: 1;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+.headlinks a{
+	text-decoration: none;
+	color: #ffedee;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	
+	
+	font-family: Nunito;
+}
+
+.rotor{
+	position: relative;
+	animation-name: rotor;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes rotor{
+	0% { transform: rotate(120deg);}
+	
+	100% { transform: rotate(360deg);}
+}
